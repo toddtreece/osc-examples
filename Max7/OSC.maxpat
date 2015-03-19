@@ -43,9 +43,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 524.75, 269.0, 228.0, 47.0 ],
+					"patching_rect" : [ 457.75, 292.0, 260.0, 47.0 ],
 					"style" : "",
-					"text" : "oscroute.js\nCreated by: James Drake.\nhttp://monome.org/docs/app:oscroute"
+					"text" : "the oscroute.js script was created by James Drake and can be found here:\nhttp://monome.org/docs/app:oscroute"
 				}
 
 			}
@@ -292,9 +292,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 158.0, 151.0, 23.0 ],
+					"patching_rect" : [ 49.0, 158.0, 144.0, 23.0 ],
 					"style" : "",
-					"text" : "udpsend 127.0.0.1 9998"
+					"text" : "udpsend 10.0.1.9 9998"
 				}
 
 			}
