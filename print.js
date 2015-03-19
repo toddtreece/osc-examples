@@ -26,7 +26,7 @@ function send() {
   // build message with a few different OSC args
   var many = osc.toBuffer({
     oscType: 'message',
-    address: '/test/many',
+    address: '/print/many',
     args: [{
       type: 'string',
       value: 'testing'
@@ -36,7 +36,7 @@ function send() {
       value: 3.14
     },
     {
-      type: 'numeric',
+      type: 'integer',
       value: 200
     }]
   });
@@ -44,9 +44,9 @@ function send() {
   // build x message with single arg
   var x = osc.toBuffer({
     oscType: 'message',
-    address: '/test/x',
+    address: '/print/x',
     args: [{
-      type: 'numeric',
+      type: 'integer',
       value: 50
     }]
   });
@@ -54,9 +54,9 @@ function send() {
   // build y message with single arg
   var y = osc.toBuffer({
     oscType: 'message',
-    address: '/test/y',
+    address: '/print/y',
     args: [{
-      type: 'numeric',
+      type: 'integer',
       value: 20
     }]
   });
