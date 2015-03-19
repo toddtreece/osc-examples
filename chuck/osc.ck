@@ -1,19 +1,25 @@
 // SENDING
 OscOut xmit;
 xmit.dest( "127.0.0.1", 9998 );
-xmit.start( "/test/chuck" );
+xmit.start( "/print/chuck" );
 "testing" => xmit.add;
 5 => xmit.add;
 32.93 => xmit.add;
+xmit.send();
+
+xmit.start( "/socketio" );
+50 => xmit.add;
+55 => xmit.add;
 xmit.send();
 
 // RECEIVING
 OscIn oin;
 OscMsg msg;
 9999 => oin.port;
-oin.addAddress( "/test/x, i" );
-oin.addAddress( "/test/y, i" );
-oin.addAddress( "/test/many, sfi" );
+oin.addAddress( "/print/x, i" );
+oin.addAddress( "/print/y, i" );
+oin.addAddress( "/print/many, sfi" );
+oin.addAddress( "/socketio, ii" );
 
 while ( true )
 {
