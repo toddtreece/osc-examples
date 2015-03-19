@@ -1,0 +1,25 @@
+{
+  "name": "osc-pitft",
+  "version": "1.0.0",
+  "description": "An example demonstrating sending touch info via OSC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toddtreece/osc-examples"
+  },
+  "keywords": [
+    "osc",
+    "pitft",
+    "raspberry",
+    "pi"
+  ],
+  "author": "Todd Treece <todd@uniontownlabs.org>",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/toddtreece/osc-examples/issues"
+  },
+  "homepage": "https://github.com/toddtreece/osc-examples"
+}
