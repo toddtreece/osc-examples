@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>socket.io & osc example</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+
+    <h1>socket.io & osc</h1>
+
+    <input type="number" id="x" value="0">
+    <input type="number" id="y" value="0">
+    <button id="send">Send</button>
+
+    <h2>Output:</h2>
+
+    <pre id="output"></pre>
+
+    <script>
+
+      var socket = io.connect();
+
+      socket.on('osc', function(data) {
+        var output = document.getElementById('output');
+        document.getElementById('x').value = data.x;
+        document.getElementById('y').value = data.y;
+        output.innerHTML = output.innerHTML + 'x: ' + data.x + ' y: ' + data.y + '\n';
+      });
+
+      document.getElementById('send').addEventListener('click', function() {
+        socket.emit('browser', {
+          x: document.getElementById('x').value.trim() || 0,
+          y: document.getElementById('y').value.trim() || 0
+        });
+      });
+
+    </script>
+
+  </body>
+</html>
