@@ -1,6 +1,11 @@
 var pitft = require('pitft'),
     touch = require('pitft-touch'),
-    fb = pitft('/dev/fb1');
+    fb = pitft('/dev/fb1'),
+    xMax = fb.size().width,
+    yMax = fb.size().height,
+    osc = require('osc-min'),
+    dgram = require('dgram'),
+    remote;
 
 fb.clear();
 
@@ -9,16 +14,12 @@ function s(value, fromMin, fromMax, toMin, toMax) {
   return (percent * (toMax - toMin) + toMin);
 }
 
-var xMax = fb.size().width;
-var yMax = fb.size().height;
-
-var osc = require('osc-min'),
-    dgram = require('dgram'),
-    remote;
-
 // listen for OSC messages and print them to the console
 var udp = dgram.createSocket('udp4', function(msg, rinfo) {
   remote = rinfo.address;
+  fb.color(0, 0, 1);
+  fb.rect(0, 0, xMax, yMax, true);
+  fb.blit();
 });
 
 function send(x,y) {
@@ -33,7 +34,7 @@ function send(x,y) {
   // build message with a few different OSC args
   var midi = osc.toBuffer({
     oscType: 'message',
-    address: '/pitft',
+    address: '/pitft/sine',
     args: [{
       type: 'integer',
       value: x
@@ -50,28 +51,21 @@ function send(x,y) {
 
 udp.bind(9998);
 console.log('Listening for OSC messages on port 9998');
+console.log('Make sure to send connect message from example OSC patch');
 
 var waiting;
 touch('/dev/input/touchscreen', function(err, data) {
 
-  if(waiting) {
-    return;
-  }
-
-  waiting = setTimeout(function() { clearInterval(waiting); waiting = null; }, 100);
-  fb.clear();
-
-  var r = 0,
-      g = 0,
-      b = 0;
-
-  g = s(data.x, 0, xMax, 0, 1);
-  b = s(data.y, 0, yMax, 0, 1);
-
   send(data.x,data.y);
 
-  fb.color(r, g, b);
+  if(waiting)
+    return;
+
+  waiting = setTimeout(function() { clearInterval(waiting); waiting = null; }, 100);
+
+  fb.color(0, 0, 1);
   fb.rect(0, 0, xMax, yMax, true);
-  fb.image(parseInt(xMax / 2) - 80 , parseInt(yMax / 2) - 80, __dirname + '/logo.png');
+  fb.image(data.x - 80, data.y - 80, __dirname + '/logo.png');
+  fb.blit();
 
 });
