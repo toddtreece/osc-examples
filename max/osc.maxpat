@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 380.0, 127.0, 883.0, 536.0 ],
+		"rect" : [ 380.0, 127.0, 755.0, 476.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,7 +59,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 366.5, 195.0, 50.0, 22.0 ],
+					"patching_rect" : [ 306.5, 192.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -72,7 +72,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 308.0, 195.0, 50.0, 22.0 ],
+					"patching_rect" : [ 248.0, 192.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -84,7 +84,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 308.0, 158.0, 69.0, 22.0 ],
+					"patching_rect" : [ 248.0, 155.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack 0 0"
 				}
@@ -97,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 308.0, 121.0, 131.0, 22.0 ],
+					"patching_rect" : [ 248.0, 118.0, 131.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "oscroute.js",
 						"parameter_enable" : 0
@@ -115,7 +115,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.75, 482.0, 264.0, 47.0 ],
+					"patching_rect" : [ 457.75, 392.0, 264.0, 47.0 ],
 					"style" : "",
 					"text" : "the oscroute.js helper script was created by James Drake and can be found here:\nhttp://monome.org/docs/app:oscroute"
 				}
@@ -141,7 +141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 483.75, 32.0, 102.0, 24.0 ],
+					"patching_rect" : [ 423.75, 29.0, 102.0, 24.0 ],
 					"style" : "",
 					"text" : "RECEIVE"
 				}
@@ -153,7 +153,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.75, 341.0, 120.0, 22.0 ],
+					"patching_rect" : [ 420.75, 338.0, 120.0, 22.0 ],
 					"style" : "",
 					"text" : "print arg3 @popup 1"
 				}
@@ -165,7 +165,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.75, 300.0, 120.0, 22.0 ],
+					"patching_rect" : [ 420.75, 297.0, 120.0, 22.0 ],
 					"style" : "",
 					"text" : "print arg2 @popup 1"
 				}
@@ -177,7 +177,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.75, 260.0, 120.0, 22.0 ],
+					"patching_rect" : [ 420.75, 257.0, 120.0, 22.0 ],
 					"style" : "",
 					"text" : "print arg1 @popup 1"
 				}
@@ -190,7 +190,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "int" ],
-					"patching_rect" : [ 480.75, 218.0, 82.0, 22.0 ],
+					"patching_rect" : [ 420.75, 215.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack x 0. 0"
 				}
@@ -203,7 +203,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 556.75, 170.0, 142.0, 22.0 ],
+					"patching_rect" : [ 496.75, 167.0, 142.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "oscroute.js",
 						"parameter_enable" : 0
@@ -223,7 +223,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 671.75, 260.0, 110.0, 23.0 ],
+					"patching_rect" : [ 611.75, 257.0, 110.0, 23.0 ],
 					"style" : "",
 					"text" : "print y @popup 1"
 				}
@@ -236,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 556.75, 121.0, 111.0, 22.0 ],
+					"patching_rect" : [ 496.75, 118.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "oscroute.js",
 						"parameter_enable" : 0
@@ -297,7 +297,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 671.75, 218.0, 110.0, 23.0 ],
+					"patching_rect" : [ 611.75, 215.0, 110.0, 23.0 ],
 					"style" : "",
 					"text" : "print x @popup 1"
 				}
@@ -313,7 +313,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.75, 65.0, 107.0, 23.0 ],
+					"patching_rect" : [ 423.75, 62.0, 107.0, 23.0 ],
 					"style" : "",
 					"text" : "udpreceive 9999"
 				}
@@ -328,9 +328,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 210.0, 151.0, 23.0 ],
+					"patching_rect" : [ 49.0, 210.0, 148.0, 23.0 ],
 					"style" : "",
-					"text" : "udpsend 127.0.0.1 9998"
+					"text" : "udpsend localhost 9998"
 				}
 
 			}
@@ -349,7 +349,7 @@
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 607.25, 204.0, 681.25, 204.0 ],
+					"midpoints" : [ 547.25, 201.0, 621.25, 201.0 ],
 					"source" : [ "obj-11", 1 ]
 				}
 
@@ -359,7 +359,7 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 566.25, 204.0, 490.25, 204.0 ],
+					"midpoints" : [ 506.25, 201.0, 430.25, 201.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -369,7 +369,7 @@
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 648.25, 255.0, 681.25, 255.0 ],
+					"midpoints" : [ 588.25, 252.0, 621.25, 252.0 ],
 					"source" : [ "obj-11", 2 ]
 				}
 
@@ -397,6 +397,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 433.25, 105.0, 257.5, 105.0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -424,7 +425,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 566.25, 162.0, 566.25, 162.0 ],
+					"midpoints" : [ 506.25, 159.0, 506.25, 159.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -443,7 +444,7 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 521.75, 243.0, 467.0, 243.0, 467.0, 294.0, 490.25, 294.0 ],
+					"midpoints" : [ 461.75, 240.0, 407.0, 240.0, 407.0, 291.0, 430.25, 291.0 ],
 					"source" : [ "obj-5", 1 ]
 				}
 
@@ -453,7 +454,7 @@
 					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 553.25, 243.0, 467.0, 243.0, 467.0, 336.0, 490.25, 336.0 ],
+					"midpoints" : [ 493.25, 240.0, 407.0, 240.0, 407.0, 333.0, 430.25, 333.0 ],
 					"source" : [ "obj-5", 2 ]
 				}
 
