@@ -144,7 +144,7 @@ function draw(data) {
 
     fb.rect(button.x, button.y, button.w, button.h, true);
     fb.color(1, 1, 1);
-    fb.font('fantasy', 14, true);
+    fb.font('fantasy', 16, true);
     fb.text(button.x + button.w / 2, button.y + button.h / 2, button.name, true); 
      
   }
