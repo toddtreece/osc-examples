@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 675.0, 552.0 ],
+		"rect" : [ 59.0, 104.0, 478.0, 565.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,24 +38,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 285.75, 334.0, 369.0, 143.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "gain~",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 201.0, 334.0, 34.0, 89.0 ],
+					"patching_rect" : [ 269.25, 330.0, 34.0, 89.0 ],
 					"style" : ""
 				}
 
@@ -66,7 +55,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.5, 436.0, 45.0, 45.0 ],
+					"patching_rect" : [ 263.75, 432.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -166,17 +155,17 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 266.75, 95.0, 107.0, 22.0 ],
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 266.75, 95.0, 132.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "oscroute.js",
 						"parameter_enable" : 0
 					}
 ,
 					"style" : "",
-					"text" : "js oscroute.js /pitft"
+					"text" : "js oscroute.js /pitft/sine"
 				}
 
 			}
@@ -187,7 +176,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.75, 503.0, 264.0, 47.0 ],
+					"patching_rect" : [ 207.25, 508.0, 264.0, 47.0 ],
 					"style" : "",
 					"text" : "the oscroute.js helper script was created by James Drake and can be found here:\nhttp://monome.org/docs/app:oscroute"
 				}
@@ -272,9 +261,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 115.0, 148.0, 23.0 ],
+					"patching_rect" : [ 49.0, 115.0, 150.0, 23.0 ],
 					"style" : "",
-					"text" : "udpsend pitft.local 9998"
+					"text" : "udpsend 10.0.1.11 9998"
 				}
 
 			}
@@ -369,16 +358,7 @@
 					"destination" : [ "obj-35", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 278.75, 320.0, 210.5, 320.0 ],
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"midpoints" : [ 278.75, 320.0, 278.75, 320.0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -421,7 +401,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "oscroute.js",
+				"bootpath" : "~/adafruit-osc-guide/max",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
 		"embedsnapshot" : 0
 	}
 
