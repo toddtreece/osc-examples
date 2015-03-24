@@ -2,8 +2,7 @@
 
 ## Installation
 
-The examples require the latest stable version of node.js (>= v0.12.0) to be installed.
-
+The examples require the latest stable version of node.js (>= v0.12.0) to be installed. After downloading and installing node.js, you can clone this repository and install the dependencies using `npm`.
 ```
 $ git clone https://github.com/toddtreece/osc-examples.git && cd osc-examples
 $ npm install
@@ -24,7 +23,7 @@ If you would like to use Chuck with the examples, you will need to download and 
 ## Included Examples
 
 * `print.js` - prints received messages from the Max, Pd, or Chuck OSC examples. Also sends messages back one every second.
-* `socketio.js` - demonstrates communicating through OSC with a web browser in real time using socket.io using node.js to translate messages to and from Max, Pd, or Chuck.
+* `socketio.js` - demonstrates communicating through OSC with a web browser in real time using socket.io and node.js to translate messages to and from Max, Pd, or Chuck.
 
 ### Raspberry Pi PiTFT Examples
 
@@ -41,7 +40,7 @@ $ npm install
 
 #### PiTFT Examples
 
-* `sine.js' - sends out X & Y of touches as MIDI pitch and velocity values. Top left of the screen is 0 pitch 0 velocty, and bottom right is 127 pitch & 127 velocity. Use with the pitft_sine example in Max, Pd, or Chuck on your workstation.
+* `sine.js` - sends out X & Y of touches as MIDI pitch and velocity values. Top left of the screen is 0 pitch 0 velocty, and bottom right is 127 pitch & 127 velocity. Use with the pitft_sine example in Max, Pd, or Chuck on your workstation.
 * `sample.js` - creates a grid of 4 buttons that will trigger samples loaded with the pitft_sample example in Max, Pd, or Chuck on your workstation.
 
 
