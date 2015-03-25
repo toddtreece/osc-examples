@@ -1,6 +1,6 @@
 var pitft = require('pitft'),
     touch = require('pitft-touch'),
-    fb = pitft('/dev/fb1'),
+    fb = pitft('/dev/fb1', true),
     xMax = fb.size().width,
     yMax = fb.size().height,
     osc = require('osc-min'),

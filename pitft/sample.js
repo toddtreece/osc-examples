@@ -97,7 +97,7 @@ touch('/dev/input/touchscreen', function(err, data) {
     
   send(getId(data));
   draw(data);
-  setTimeout(draw, 100);
+  setTimeout(draw, 200);
 
 });
 
@@ -138,13 +138,15 @@ function draw(data) {
     var button = buttons[i];
 
     if (button.id == id)
-      fb.color(1, 0, 0);
+      fb.color(0, 1, 0);
     else
-      fb.color(0, 0, 1);
+      fb.color(0, 0.8, 0);
 
     fb.rect(button.x, button.y, button.w, button.h, true);
-    fb.color(1, 1, 1);
-    fb.font('fantasy', 16, true);
+    fb.color(0, 0, 0);
+    fb.font('fantasy', 18, true);
+    fb.line(xMax /2, 0, xMax / 2, yMax, 2);
+    fb.line(0, yMax / 2, xMax, yMax / 2, 2);
     fb.text(button.x + button.w / 2, button.y + button.h / 2, button.name, true); 
      
   }
